@@ -1,0 +1,151 @@
+.header {
+    background: var(--background);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-playfair);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navList li a,
+.dropdown span {
+    font-weight: 500;
+    color: var(--text);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.navList li a:hover,
+.dropdown span:hover {
+    color: var(--primary);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    border-radius: 8px;
+    display: none;
+    min-width: 150px;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dropdown:hover .dropdownContent {
+    display: flex;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--primary);
+    position: relative;
+    transition: var(--transition);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+.hamburgerOpen {
+    background: transparent;
+}
+
+.hamburgerOpen::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.hamburgerOpen::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--background);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        transform: translateX(100%);
+        transition: var(--transition);
+    }
+
+    .navOpen {
+        transform: translateX(0);
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .dropdownContent {
+        position: static;
+        box-shadow: none;
+        padding: 0.5rem 0 0 1rem;
+        display: flex;
+    }
+}

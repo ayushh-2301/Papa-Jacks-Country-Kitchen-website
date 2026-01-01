@@ -1,0 +1,166 @@
+.pageHeader {
+    background: var(--primary);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.pageHeader p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.contactInfo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactInfo p {
+    margin-bottom: 2.5rem;
+    color: var(--text-light);
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.infoItem {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.infoItem .icon {
+    font-size: 1.8rem;
+    background: var(--secondary);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.infoItem h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.infoItem p,
+.infoItem a {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.infoItem a:hover {
+    color: var(--primary);
+}
+
+.hoursBox {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+.hoursBox h3 {
+    margin-bottom: 1.5rem;
+}
+
+.hoursBox ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.hoursBox li {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactForm {
+    background: var(--background);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.contactForm h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup input[type="tel"],
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+.formGroup input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.mapSection {
+    padding-bottom: 5rem;
+}
+
+.mapWrapper {
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactForm {
+        padding: 2rem;
+    }
+}

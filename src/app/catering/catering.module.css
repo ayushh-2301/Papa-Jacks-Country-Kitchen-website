@@ -1,0 +1,129 @@
+.pageHeader {
+    background: var(--primary);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.pageHeader p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.imageCol img {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+.textCol h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.textCol h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.textCol p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.capabilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.capabilities li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.capabilities li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.coverageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.areaTag {
+    background: var(--secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.ctaBox {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    margin-top: 3rem;
+}
+
+.ctaBox h3 {
+    margin-top: 0;
+}
+
+.info {
+    background: var(--secondary);
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+.infoItem h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.infoItem p {
+    color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .capabilities {
+        grid-template-columns: 1fr;
+    }
+
+    .infoGrid {
+        grid-template-columns: 1fr;
+    }
+}

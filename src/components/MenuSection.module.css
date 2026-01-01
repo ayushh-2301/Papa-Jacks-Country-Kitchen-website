@@ -1,0 +1,128 @@
+.menuSection {
+    padding: 5rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--text-light);
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 4rem;
+}
+
+.category {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.categoryName {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.categoryNote {
+    font-style: italic;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.item {
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 0.8rem;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.itemHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.itemName {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.itemPrice {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.itemDescription {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.addons {
+    margin-top: 5rem;
+    background: var(--secondary);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.addons h3 {
+    margin-bottom: 2rem;
+}
+
+.addonsGrid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.addon {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.addon span:last-child {
+    color: var(--primary);
+}
+
+.disclaimer {
+    margin-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .categoriesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        padding: 1.5rem;
+    }
+}

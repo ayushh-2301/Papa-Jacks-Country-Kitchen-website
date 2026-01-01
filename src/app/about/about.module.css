@@ -1,0 +1,98 @@
+.pageHeader {
+    background: var(--primary);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.pageHeader h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.pageHeader p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+.imageCol img {
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+.textCol h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.textCol h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.textCol p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+}
+
+.textCol ul {
+    margin-bottom: 2rem;
+}
+
+.textCol li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.textCol li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.values {
+    background: var(--card-bg);
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+.valueItem h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.valueItem p {
+    color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .imageCol {
+        order: -1;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+}
