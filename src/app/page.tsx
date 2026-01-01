@@ -11,14 +11,17 @@ export default function Home() {
     <div className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroImage}>
-          <Image
-            src="/hero.png"
-            alt="Southern Breakfast Spread"
-            fill
-            priority
-            style={{ objectFit: "cover" }}
-          />
+        <div className={styles.heroVideo}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={styles.video}
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className={styles.heroOverlay}></div>
         </div>
         <div className={`container ${styles.heroContent}`}>
