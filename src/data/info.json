@@ -1,0 +1,24 @@
+{
+  "name": "Papa Jack’s Country Kitchen",
+  "tagline": "Southern Homestyle Cooking",
+  "subTagline": "Meals just like mama used to make",
+  "contact": {
+    "address": "2200 Sparta Way, Buford, GA 30519, USA",
+    "phone": "(770) 965-7007",
+    "email": "papajackscatering07@gmail.com",
+    "website": "https://www.papajackscountrykitchen.com/"
+  },
+  "hours": [
+    { "day": "Monday", "hours": "Closed" },
+    { "day": "Tuesday", "hours": "7:00 AM – 2:00 PM" },
+    { "day": "Wednesday", "hours": "7:00 AM – 2:00 PM" },
+    { "day": "Thursday", "hours": "7:00 AM – 2:00 PM" },
+    { "day": "Friday", "hours": "7:00 AM – 2:00 PM (Breakfast/Lunch), 4:30 PM – 8:00 PM (Dinner)" },
+    { "day": "Saturday", "hours": "7:00 AM – 11:30 AM" },
+    { "day": "Sunday", "hours": "8:00 AM – 2:00 PM" }
+  ],
+  "socials": {
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com"
+  }
+}

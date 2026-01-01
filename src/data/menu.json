@@ -1,0 +1,74 @@
+{
+  "breakfast": {
+    "categories": [
+      {
+        "name": "Biscuits",
+        "items": [
+          { "name": "Plain Biscuit", "price": "1.99" },
+          { "name": "Sausage Biscuit", "price": "3.49" },
+          { "name": "Bacon Biscuit", "price": "3.49" },
+          { "name": "Chicken Biscuit", "price": "4.29" },
+          { "name": "Steak Biscuit", "price": "4.29" }
+        ]
+      },
+      {
+        "name": "Platters / Eggs",
+        "items": [
+          { "name": "Two Egg Platter", "price": "6.99", "description": "Served with grits or hashbrowns and toast or biscuit" },
+          { "name": "Papa Jack's Special", "price": "9.99", "description": "Two eggs, choice of meat, grits or hashbrowns, and toast or biscuit" }
+        ]
+      },
+      {
+        "name": "Pancakes & Sweet Breakfast",
+        "items": [
+          { "name": "Short Stack (2)", "price": "5.49" },
+          { "name": "Full Stack (3)", "price": "6.99" },
+          { "name": "French Toast", "price": "6.49" }
+        ]
+      }
+    ],
+    "addons": [
+      { "name": "Add Egg", "price": "1.25" },
+      { "name": "Add Cheese", "price": "0.75" },
+      { "name": "Add Gravy", "price": "1.50" }
+    ]
+  },
+  "lunch": {
+    "categories": [
+      {
+        "name": "Meat & Main Platters",
+        "items": [
+          { "name": "Chicken Pot Pie", "price": "11.99" },
+          { "name": "Baked Fish", "price": "12.99" },
+          { "name": "Meat Loaf", "price": "11.99" },
+          { "name": "Fried Chicken", "price": "11.99" },
+          { "name": "Country Fried Steak", "price": "12.49" }
+        ],
+        "note": "Platter includes cornbread/roll/biscuit"
+      },
+      {
+        "name": "Vegetables & Sides",
+        "items": [
+          { "name": "Mashed Potatoes & Gravy", "price": "2.99" },
+          { "name": "Mac N Cheese", "price": "2.99" },
+          { "name": "Turnip Greens", "price": "2.99" },
+          { "name": "Fried Okra", "price": "2.99" },
+          { "name": "Green Beans", "price": "2.99" }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          { "name": "Banana Pudding", "price": "4.49" },
+          { "name": "Peach Cobbler", "price": "4.49" },
+          { "name": "Strawberry Shortcake", "price": "4.99" }
+        ]
+      }
+    ]
+  },
+  "catering": {
+    "overview": "Full-service catering for all occasions. Delivery & setup available.",
+    "coverage": ["Buford", "Flowery Branch", "Braselton", "Jefferson", "Dacula", "Duluth", "Oakwood", "Gainesville", "Suwanee", "Lawrenceville", "Johns Creek"],
+    "capabilities": ["BBQ", "Low-country boils", "Baby back ribs", "Chafing dishes", "Plates, napkins, cups, utensils", "Ice & beverages"]
+  }
+}
